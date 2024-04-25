@@ -2,6 +2,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:qr_code_app/screens/platfrorm_specific_code.dart';
 import 'package:qr_code_app/screens/tab_box/tab_box_screen.dart';
 
 import 'bloc/scanner_bloc.dart';
@@ -39,7 +40,7 @@ class _MyAppState extends State<MyApp> {
           ),
         );
       },
-      child: const TabBox1(),
+      child:  DeviceInfoWidgetScreen(),
     );
   }
 }
